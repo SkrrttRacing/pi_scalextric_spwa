@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/aliceliveprojects/pi_scalextric_spwa/issues"
   },
-  "homepage": "https://github.com/aliceliveprojects/pi_scalextric_spwa#readme"
+  "homepage": "https://github.com/aliceliveprojects/pi_scalextric_spwa#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

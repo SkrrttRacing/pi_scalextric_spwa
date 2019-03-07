@@ -8,12 +8,10 @@ CarControlViewCtrl.$inject = [
     'brokerDetails'
 ];
 
-function toast(
-    {
-    text: , 
-    duration: 2000 
+function toast(    { /* creates toast function */
+    text: txt, 
     
-  }).showToast();
+  });showToast();
   
 function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
     var vm = this;
@@ -133,10 +131,26 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
                     console.log(message);
                 }
             })
-        if (message.topic === firespecialweapon)
+        if (message.topic.includes === 'event') /* Checks vm.resources for event*/
         {
-            vm.resources = JSON.parse(oil_slick.py); /* Displays toast message if oil slick applied */
-            toast("Oil slick applied")
+            console.log(message);
+            var res = vm.resources;
+            var detail = null;
+            if(res){
+                for(var index=0; index < res.length; index++){ /* Runs through vm.resources until finding the weapon*/
+                    if(message.id == res[index].id){
+                        detail = res[index];
+                        break;
+                    }
+                }
+            }
+
+            if(detail){
+                toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
+            }
+
+
+            
         }
         }
 
