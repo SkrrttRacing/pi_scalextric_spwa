@@ -9,10 +9,12 @@ IndexViewCtrl.$inject = [
 
 function IndexViewCtrl($rootScope, $state, mqttService, brokerDetails) {
     var vm = this;
+    var p1 = false; 
+    var p2 = false;
 
     //Initialises the range of channels that can be selected and the selected channel
     vm.channels = Array.apply(null, {
-        length: 5
+        length: 2
     }).map(Function.call, Number);;
     vm.channel = 0;
 
