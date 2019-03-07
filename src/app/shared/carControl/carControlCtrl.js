@@ -8,6 +8,13 @@ CarControlViewCtrl.$inject = [
     'brokerDetails'
 ];
 
+function toast(
+    {
+    text: , 
+    duration: 2000 
+    
+  }).showToast();
+  
 function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
     var vm = this;
 
@@ -126,6 +133,11 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
                     console.log(message);
                 }
             })
+        if (message.topic === firespecialweapon)
+        {
+            vm.resources = JSON.parse(oil_slick.py); /* Displays toast message if oil slick applied */
+            toast("Oil slick applied")
+        }
         }
 
     });
@@ -133,10 +145,9 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
     /*
      When users changes car throttle a change request is sent to server. 
     */
-    $scope.$watch("carControlView.throttle", function (newThrottle, oldThrottle) {
+    $scope.$watch("carControlView.throttle", function (newThrottle, oldThrottle) { /* Keeps track of the current throttle and sets new throttle if changed */
         if (newThrottle != oldThrottle) {
-            var payload = {
-                set : newThrottle
+            var payload = {               set : newThrottle
             }
             mqttService.publish(throttleTopic, JSON.stringify(payload));
         }
