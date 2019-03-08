@@ -1,8 +1,19 @@
 
-.throttle{
+div.throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
     width: 8px;
     height: 175px;
     padding: 0 5px;
+    border: solid 10px black;
+    background-color: red;
+    margin: 30px;
+
+}
+
+
+
+.gobutton
+{
+    color: red;
 }
