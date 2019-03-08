@@ -8,10 +8,6 @@ CarControlViewCtrl.$inject = [
     'brokerDetails'
 ];
 
-function toast(    { /* creates toast function */
-    text: txt, 
-    
-  });showToast();
   
 function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
     var vm = this;
