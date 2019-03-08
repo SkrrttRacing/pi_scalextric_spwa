@@ -1,6 +1,6 @@
 <span ng-bind="carControlView.throttle" ng-show="!carControlView.throttleError"></span>
 <span ng-show="carControlView.throttleError">Error</span>
-<div>
+<div class="throttle">
     <input type="range" min="0" max="100" value="0" orient="vertical" class="throttle" ng-model="carControlView.throttle">
     <input type="button" value="Stop" ng-click="carControlView.stop()"></input>
 </div>
