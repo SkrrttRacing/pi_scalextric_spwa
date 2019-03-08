@@ -8,6 +8,11 @@ CarControlViewCtrl.$inject = [
     'brokerDetails'
 ];
 
+function toast(    { /* creates toast function */
+    text: txt, 
+    
+  });showToast();
+  
 function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
     var vm = this;
 
@@ -126,6 +131,27 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
                     console.log(message);
                 }
             })
+        if (message.topic.includes === 'event') /* Checks vm.resources for event*/
+        {
+            console.log(message);
+            var res = vm.resources;
+            var detail = null;
+            if(res){
+                for(var index=0; index < res.length; index++){ /* Runs through vm.resources until finding the weapon*/
+                    if(message.id == res[index].id){
+                        detail = res[index];
+                        break;
+                    }
+                }
+            }
+
+            if(detail){
+                toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
+            }
+
+
+            
+        }
         }
 
     });
@@ -133,10 +159,9 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
     /*
      When users changes car throttle a change request is sent to server. 
     */
-    $scope.$watch("carControlView.throttle", function (newThrottle, oldThrottle) {
+    $scope.$watch("carControlView.throttle", function (newThrottle, oldThrottle) { /* Keeps track of the current throttle and sets new throttle if changed */
         if (newThrottle != oldThrottle) {
-            var payload = {
-                set : newThrottle
+            var payload = {               set : newThrottle
             }
             mqttService.publish(throttleTopic, JSON.stringify(payload));
         }
