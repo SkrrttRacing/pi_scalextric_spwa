@@ -14,30 +14,44 @@
 
 input[type=button], input[type=submit], input[type=reset] 
 {
-    background-color: yellow;
-    border: none;
-    color:red;
+    background-color: black;
+    border: solid;
+    color:yellow;
     font-size: 25px;
     font-style: bold;
     padding: 10px 22px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 2px;
     cursor: pointer;
-    
+    margin-left:230px;
+	
     
   }
 
-input:active[type=button], input[type=submit], input[type=reset]
+select 
 {
-   
+	padding: 3px;
+	font-size: 20px;
+	margin-right: 56px;
+	margin-bottom: 40px;
+	margin-top: 200px;
+	margin-left: 100px;
+	font-style: bold;
+	color: Yellow;
+	background-color: black;
+	border: solid;
+	
 }
-
 
 
 h1
 {
     color: red;
-    padding-left: 100px;
+    
+	font-size: 40px;
+	border
+	border: solid;
+	border-color: yellow;
 }
 
 body
