@@ -1,5 +1,5 @@
 
-div.throttle{
+.throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
     width: 8px;
@@ -12,8 +12,35 @@ div.throttle{
 }
 
 
+input[type=button], input[type=submit], input[type=reset] 
+{
+    background-color: yellow;
+    border: none;
+    color:red;
+    font-size: 25px;
+    font-style: bold;
+    padding: 10px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    
+  }
 
-.gobutton
+input:active[type=button], input[type=submit], input[type=reset]
+{
+   
+}
+
+
+
+h1
 {
     color: red;
+    padding-left: 100px;
+}
+
+body
+{
+    background-color: black;
 }
