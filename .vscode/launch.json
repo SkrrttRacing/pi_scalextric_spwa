@@ -11,8 +11,8 @@
             "program": "${workspaceFolder}/src/server.js" ,
             "env":{ 
                 "UUID" : "testUUID",
-                "BROKERHOST" : "iot.eclipse.org",
-                "BROKERPORT" : "443",
+                "BROKERHOST" : "test.mosquitto.org",
+                "BROKERPORT" : "8080",
                 "USERNAME" : "",
                 "PASSWORD" : "",
                 "SSL" : "true"

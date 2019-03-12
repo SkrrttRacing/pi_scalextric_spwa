@@ -34,6 +34,7 @@ function IndexViewCtrl($rootScope, $state, mqttService, brokerDetails) {
             mqttService.initialize(brokerDetails.HOST, brokerDetails.PORT);
             mqttService.onConnectionLost(function () {
                 console.error("connection lost");
+                
             });
 
 
