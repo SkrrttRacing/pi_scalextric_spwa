@@ -1,1 +1,1 @@
-angular.module('app').value('brokerDetails',{"UUID":"testUUID","HOST":"iot.eclipse.org","PORT":"443","USERNAME":"ZillyMee","PASSWORD":"","SSL":false});
+angular.module('app').value('brokerDetails',{"UUID":"","HOST":"","PORT":"","USERNAME":"ZillyMee","PASSWORD":"","SSL":false});
