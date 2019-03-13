@@ -1,4 +1,10 @@
 
+@font-face
+{
+	font-family: mywebfont;
+	src: url('SpeedRacing.ttf'); format('truetype');
+}
+
 .throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
@@ -16,14 +22,15 @@ input[type=button], input[type=submit], input[type=reset]
 {
     background-color: black;
     border: solid;
+	border-color: red;
     color:yellow;
     font-size: 25px;
-    font-style: bold;
+    font-family: mywebfont;
     padding: 10px 22px;
     text-decoration: none;
     margin: 2px;
     cursor: pointer;
-    margin-left:230px;
+    margin-left:370px;
 	
     
   }
@@ -32,14 +39,16 @@ select
 {
 	padding: 3px;
 	font-size: 20px;
-	margin-right: 56px;
 	margin-bottom: 40px;
-	margin-top: 200px;
+	margin-top: 220px;
 	margin-left: 100px;
 	font-style: bold;
 	color: Yellow;
 	background-color: black;
 	border: solid;
+	border-color: yellow;
+	padding-left: 120px;
+	padding-right: 100px;
 	
 }
 
@@ -47,11 +56,17 @@ select
 h1
 {
     color: red;
-    
-	font-size: 40px;
-	border
-	border: solid;
-	border-color: yellow;
+    font-family: mywebfont;
+	font-size: 60px;
+}
+
+h2
+{
+	color: yellow;
+	font-family: mywebfont;
+	font-size: 50px;
+	margin-left: 120px;
+	margin: center;
 }
 
 body
