@@ -8,12 +8,12 @@
 .throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
-    width: 8px;
-    height: 175px;
-    padding: 0 5px;
-    border: solid 10px black;
+    width: 8%;
+    height: 175%
+    padding: 0 5%;
+    border: solid 10% black;
     background-color: red;
-    margin: 30px;
+    margin: 30%;
 
 }
 
@@ -24,13 +24,13 @@ input[type=button], input[type=submit], input[type=reset]
     border: solid;
 	border-color: red;
     color:yellow;
-    font-size: 25px;
+    font-size: 25%;
     font-family: mywebfont;
-    padding: 10px 22px;
+    padding: 10% 22%;
     text-decoration: none;
-    margin: 2px;
+    margin: 2%;
     cursor: pointer;
-    margin-left:370px;
+    margin-left:90%;
 	
     
   }
