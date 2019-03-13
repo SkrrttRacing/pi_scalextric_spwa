@@ -8,12 +8,12 @@
 .throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
-    width: 8%;
-    height: 175%
-    padding: 0 5%;
-    border: solid 10% black;
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+    border: solid 10px black;
     background-color: red;
-    margin: 30%;
+    margin: 30px;
 
 }
 
@@ -24,18 +24,18 @@ input[type=button], input[type=submit], input[type=reset]
     border: solid;
 	border-color: red;
     color:yellow;
-    font-size: 25%;
+    font-size: 25px;
     font-family: mywebfont;
-    padding: 10% 22%;
+    padding: 10px 22px;
     text-decoration: none;
-    margin: 2%;
+    margin: 2px;
     cursor: pointer;
-    margin-left:90%;
+    margin-left:90px;
 	
     
   }
 
-select 
+select
 {
 	padding: 3px;
 	font-size: 20px;
@@ -43,7 +43,7 @@ select
 	margin-top: 220px;
 	margin-left: 100px;
 	font-style: bold;
-	color: Yellow;
+	color: yellow;
 	background-color: black;
 	border: solid;
 	border-color: yellow;
@@ -57,16 +57,17 @@ h1
 {
     color: red;
     font-family: mywebfont;
-	font-size: 60px;
+	font-size: 300%;
 }
 
 h2
 {
 	color: yellow;
 	font-family: mywebfont;
-	font-size: 50px;
+	font-size: 250%;
 	margin-left: 120px;
 	margin: center;
+	float: left;
 }
 
 body
