@@ -1,6 +1,21 @@
+
+<img src="H:\Documents\GitHub\pi_scalextric_spwa\src\assets\css\cars.jpg" width="300" height="150">
+
 <form name="setup_form" ng-submit="indexView.go(setup_form.$valid)">
     Channel <select ng-model="indexView.channel"  ng-options="c for c in indexView.channels" required></select> <br>
     <div class="gobutton">
-    <input type="submit" value="Start Race" ng-disabled="steup_form.$invalid"></input>
+    <input type="submit" value="(Start Race)" ng-disabled="steup_form.$invalid"></input>
     </div>
+	
+	
+
+		
 </form>
+
+
+<audio autoplay>
+		<source src="RACING SOUND.wav" type="audio/wav">
+</audio>
+<h2>
+	Select your Car
+</h2>
