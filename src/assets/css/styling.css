@@ -2,7 +2,7 @@
 @font-face
 {
 	font-family: mywebfont;
-	src: url('SpeedRacing.ttf'); format('truetype');
+	src: url('SpeedRacing.ttf'); format:('truetype');
 }
 
 .throttle{
