@@ -142,7 +142,7 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
             }
 
             if(detail){
-                Toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
+                toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
             }
 
 
