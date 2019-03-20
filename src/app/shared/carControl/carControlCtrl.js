@@ -155,7 +155,7 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
     Toast(function (message)){
         text: message 
         
-      .showToast()};
+      .showToast();}
 
     /*
      When users changes car throttle a change request is sent to server. 
