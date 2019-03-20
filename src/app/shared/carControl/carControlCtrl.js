@@ -141,8 +141,8 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
                 }
             }
 
-            if(detail){
-                Toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
+           // if(detail){
+                //Toast("weapon! "  + detail.name); /*Prints toast message when weapon is uses*/
             }
 
 
@@ -152,9 +152,9 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
 
     });
 
-    function Toast({
-        text: text
-        }).showToast();
+    //function Toast({
+       //text: text
+       // }).showToast();
 
     /*
      When users changes car throttle a change request is sent to server. 
