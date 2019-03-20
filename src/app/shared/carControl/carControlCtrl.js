@@ -152,8 +152,8 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
 
     });
 
-    function (Toast)({
-        text: message 
+    function Toast()({
+        text: 
         
       .showToast();)}
 
