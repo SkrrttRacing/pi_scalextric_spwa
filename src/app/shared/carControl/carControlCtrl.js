@@ -147,8 +147,8 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
 
 
             
-        }
-        }
+        //}
+       // }
 
     });
 
