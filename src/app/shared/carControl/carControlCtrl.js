@@ -152,7 +152,7 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
 
     });
 
-    Toast({
+    function Toast({
         text: null, 
         duration: 3000,
         destination: "https://github.com/apvarun/toastify-js",
